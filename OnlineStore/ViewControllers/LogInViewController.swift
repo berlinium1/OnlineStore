@@ -19,10 +19,18 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setUpElements()
         // Do any additional setup after loading the view.
     }
     
+    func setUpElements () {
+        errorLabel.alpha = 0
+        
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleFilledButton(logInButton)
+    }
 
     /*
     // MARK: - Navigation
