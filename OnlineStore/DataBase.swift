@@ -7,12 +7,4 @@
 
 import Foundation
 
-class DataBase {
-    var accounts = [Account]()
-    
-    init() {}
-    
-    init(account: Account) {
-        self.accounts.append(account)
-    }
-}
+var DATABASE = [Account]()
