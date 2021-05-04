@@ -18,6 +18,8 @@
 		C4DEB07F26409E8200811624 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB07E26409E8200811624 /* HomeViewController.swift */; };
 		C4DEB08A2640AA6700811624 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB0892640AA6700811624 /* Constants.swift */; };
 		C4DEB08D2640AA8000811624 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB08C2640AA8000811624 /* Utilities.swift */; };
+		C4DEB0902641475000811624 /* AccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB08F2641475000811624 /* AccountData.swift */; };
+		C4DEB093264148EC00811624 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB092264148EC00811624 /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C4DEB07E26409E8200811624 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4DEB0892640AA6700811624 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4DEB08C2640AA8000811624 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C4DEB08F2641475000811624 /* AccountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountData.swift; sourceTree = "<group>"; };
+		C4DEB092264148EC00811624 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				C4DEB06C26409D5E00811624 /* Assets.xcassets */,
 				C4DEB06E26409D5E00811624 /* LaunchScreen.storyboard */,
 				C4DEB07126409D5E00811624 /* Info.plist */,
+				C4DEB08F2641475000811624 /* AccountData.swift */,
+				C4DEB092264148EC00811624 /* DataBase.swift */,
 			);
 			path = OnlineStore;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DEB093264148EC00811624 /* DataBase.swift in Sources */,
 				C4DEB06826409D5B00811624 /* ViewController.swift in Sources */,
 				C4DEB06426409D5B00811624 /* AppDelegate.swift in Sources */,
 				C4DEB07926409E6200811624 /* SignUpViewController.swift in Sources */,
@@ -175,6 +182,7 @@
 				C4DEB08A2640AA6700811624 /* Constants.swift in Sources */,
 				C4DEB06626409D5B00811624 /* SceneDelegate.swift in Sources */,
 				C4DEB08D2640AA8000811624 /* Utilities.swift in Sources */,
+				C4DEB0902641475000811624 /* AccountData.swift in Sources */,
 				C4DEB07F26409E8200811624 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,9 +29,11 @@ class SignUpViewController: UIViewController {
        setUpElements()
     }
     
+    var person = Account()
+    var delegate: ViewControllerDelegate?
+    
     func setUpElements() {
         errorLabel.alpha = 0
-        
         Utilities.styleTextField(firstNameTextFieid)
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
@@ -40,6 +42,11 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
+        person.name = firstNameTextFieid.text ?? ""; firstNameTextFieid.text = ""
+        person.surname = lastNameTextField.text ?? ""; lastNameTextField.text = ""
+        person.email = emailTextField.text ?? ""; emailTextField.text = ""
+        person.password = passwordTextField.text ?? ""; passwordTextField.text = ""
+        delegate?.updateDataBase(person: person)
+        dismiss(animated: true, completion: nil)
     }
-    
 }
