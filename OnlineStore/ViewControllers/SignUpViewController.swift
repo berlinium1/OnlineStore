@@ -8,7 +8,6 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
     
     @IBOutlet weak var firstNameTextFieid: UITextField!
     
@@ -42,11 +41,28 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
-        person.name = firstNameTextFieid.text ?? ""; firstNameTextFieid.text = ""
-        person.surname = lastNameTextField.text ?? ""; lastNameTextField.text = ""
-        person.email = emailTextField.text ?? ""; emailTextField.text = ""
-        person.password = passwordTextField.text ?? ""; passwordTextField.text = ""
+        guard ((firstNameTextFieid.text) == nil) && (passwordTextField == nil) && (emailTextField == nil) else {
+            errorMessage(title: "Ooops!", message: "Please, fill all the fields")
+            return
+        }
+//        var person = Account(name: firstNameTextFieid.text, surname: lastNameTextField.text, password: passwordTextField.text, email: emailTextField.text)
+        person.name = firstNameTextFieid.text ?? ""; firstNameTextFieid.text = nil
+        person.surname = lastNameTextField.text ?? ""; lastNameTextField.text = nil
+        person.email = emailTextField.text ?? ""; emailTextField.text = nil
+        person.password = passwordTextField.text ?? ""; passwordTextField.text = nil
         delegate?.updateDataBase(person: person)
         dismiss(animated: true, completion: nil)
+    }
+}
+
+
+extension SignUpViewController {
+    private func errorMessage(title: String, message: String, textField: UITextField? = nil){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default){
+            _ in textField?.text = nil
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
