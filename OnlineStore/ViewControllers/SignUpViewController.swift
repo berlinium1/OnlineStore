@@ -25,7 +25,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       setUpElements()
+        setUpElements()
     }
     
     var person = Account()
@@ -41,17 +41,18 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
-        guard ((firstNameTextFieid.text) == nil) && (passwordTextField == nil) && (emailTextField == nil) else {
+        guard ((firstNameTextFieid.text) != "") &&
+                (passwordTextField.text != "") &&
+                (emailTextField.text != "") else {
             errorMessage(title: "Ooops!", message: "Please, fill all the fields")
             return
         }
-//        var person = Account(name: firstNameTextFieid.text, surname: lastNameTextField.text, password: passwordTextField.text, email: emailTextField.text)
-        person.name = firstNameTextFieid.text ?? ""; firstNameTextFieid.text = nil
-        person.surname = lastNameTextField.text ?? ""; lastNameTextField.text = nil
-        person.email = emailTextField.text ?? ""; emailTextField.text = nil
-        person.password = passwordTextField.text ?? ""; passwordTextField.text = nil
+        person.name = firstNameTextFieid.text ?? ""; firstNameTextFieid.text = ""
+        person.surname = lastNameTextField.text ?? ""; lastNameTextField.text = ""
+        person.email = emailTextField.text ?? ""; emailTextField.text = ""
+        person.password = passwordTextField.text ?? ""; passwordTextField.text = ""
         delegate?.updateDataBase(person: person)
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "fromRegisterToHome", sender: nil)
     }
 }
 
