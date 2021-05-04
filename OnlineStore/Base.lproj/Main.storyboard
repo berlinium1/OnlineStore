@@ -178,6 +178,7 @@
                                             <outlet property="bikeDescription" destination="G5I-9f-v3g" id="ba3-Gw-eUa"/>
                                             <outlet property="bikeImage" destination="QWe-M8-uae" id="V0b-wl-6pE"/>
                                             <outlet property="bikeTitle" destination="56E-cT-SkF" id="hhl-2p-qfa"/>
+                                            <segue destination="FEa-I1-dxI" kind="show" id="Gau-h0-Nof"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -200,6 +201,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og5-xs-25r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2592.753623188406" y="-50.223214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uEK-gD-SLr">
+            <objects>
+                <viewController id="FEa-I1-dxI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="54D-xU-l69">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ogn-IN-J3R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xfz-NP-Zu5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxr-UA-fgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3342" y="-50"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="jS5-NL-epe">

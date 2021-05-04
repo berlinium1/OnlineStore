@@ -6,3 +6,4 @@ struct Bike {
     let description: String
     let imageNmae: String
 }
+//материал вес диаметр тип скорости
