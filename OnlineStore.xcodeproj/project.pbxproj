@@ -12,6 +12,7 @@
 		BCB3006B26419F7C006F9562 /* Extension + HomeVCBikeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */; };
 		BCB3006F2641A1E1006F9562 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3006E2641A1E1006F9562 /* CellController.swift */; };
 		BCB300722641ADBF006F9562 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB300712641ADBF006F9562 /* BikeTableViewCell.swift */; };
+		BCB300752641C0A3006F9562 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB300742641C0A3006F9562 /* DetailedViewController.swift */; };
 		C4DEB06426409D5B00811624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06326409D5B00811624 /* AppDelegate.swift */; };
 		C4DEB06626409D5B00811624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06526409D5B00811624 /* SceneDelegate.swift */; };
 		C4DEB06826409D5B00811624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06726409D5B00811624 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + HomeVCBikeData.swift"; sourceTree = "<group>"; };
 		BCB3006E2641A1E1006F9562 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		BCB300712641ADBF006F9562 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
+		BCB300742641C0A3006F9562 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		C4DEB06026409D5B00811624 /* OnlineStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DEB06326409D5B00811624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DEB06526409D5B00811624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C4DEB07B26409E7400811624 /* LogInViewController.swift */,
 				C4DEB07E26409E8200811624 /* HomeViewController.swift */,
 				BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */,
+				BCB300742641C0A3006F9562 /* DetailedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				C4DEB093264148EC00811624 /* DataBase.swift in Sources */,
 				C4DEB06826409D5B00811624 /* ViewController.swift in Sources */,
+				BCB300752641C0A3006F9562 /* DetailedViewController.swift in Sources */,
 				BCB300722641ADBF006F9562 /* BikeTableViewCell.swift in Sources */,
 				C4DEB06426409D5B00811624 /* AppDelegate.swift in Sources */,
 				C4DEB07926409E6200811624 /* SignUpViewController.swift in Sources */,
