@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCB30065264190A8006F9562 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB30064264190A8006F9562 /* Bike.swift */; };
+		BCB3006826419BF2006F9562 /* BikeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3006726419BF2006F9562 /* BikeData.swift */; };
+		BCB3006B26419F7C006F9562 /* Extension + HomeVCBikeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */; };
+		BCB3006F2641A1E1006F9562 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3006E2641A1E1006F9562 /* CellController.swift */; };
+		BCB300722641ADBF006F9562 /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB300712641ADBF006F9562 /* BikeTableViewCell.swift */; };
 		C4DEB06426409D5B00811624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06326409D5B00811624 /* AppDelegate.swift */; };
 		C4DEB06626409D5B00811624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06526409D5B00811624 /* SceneDelegate.swift */; };
 		C4DEB06826409D5B00811624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB06726409D5B00811624 /* ViewController.swift */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BCB30064264190A8006F9562 /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		BCB3006726419BF2006F9562 /* BikeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeData.swift; sourceTree = "<group>"; };
+		BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + HomeVCBikeData.swift"; sourceTree = "<group>"; };
+		BCB3006E2641A1E1006F9562 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		BCB300712641ADBF006F9562 /* BikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
 		C4DEB06026409D5B00811624 /* OnlineStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DEB06326409D5B00811624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DEB06526409D5B00811624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCB300632641906C006F9562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCB30064264190A8006F9562 /* Bike.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C4DEB05726409D5B00811624 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +88,7 @@
 		C4DEB06226409D5B00811624 /* OnlineStore */ = {
 			isa = PBXGroup;
 			children = (
+				BCB300632641906C006F9562 /* Model */,
 				C4DEB0832640A99500811624 /* Helpers */,
 				C4DEB08126409E8D00811624 /* ViewControllers */,
 				C4DEB06326409D5B00811624 /* AppDelegate.swift */,
@@ -91,6 +110,7 @@
 				C4DEB07826409E6200811624 /* SignUpViewController.swift */,
 				C4DEB07B26409E7400811624 /* LogInViewController.swift */,
 				C4DEB07E26409E8200811624 /* HomeViewController.swift */,
+				BCB3006A26419F7C006F9562 /* Extension + HomeVCBikeData.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -100,6 +120,9 @@
 			children = (
 				C4DEB0892640AA6700811624 /* Constants.swift */,
 				C4DEB08C2640AA8000811624 /* Utilities.swift */,
+				BCB3006726419BF2006F9562 /* BikeData.swift */,
+				BCB3006E2641A1E1006F9562 /* CellController.swift */,
+				BCB300712641ADBF006F9562 /* BikeTableViewCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -176,14 +199,19 @@
 			files = (
 				C4DEB093264148EC00811624 /* DataBase.swift in Sources */,
 				C4DEB06826409D5B00811624 /* ViewController.swift in Sources */,
+				BCB300722641ADBF006F9562 /* BikeTableViewCell.swift in Sources */,
 				C4DEB06426409D5B00811624 /* AppDelegate.swift in Sources */,
 				C4DEB07926409E6200811624 /* SignUpViewController.swift in Sources */,
 				C4DEB07C26409E7400811624 /* LogInViewController.swift in Sources */,
 				C4DEB08A2640AA6700811624 /* Constants.swift in Sources */,
+				BCB3006826419BF2006F9562 /* BikeData.swift in Sources */,
+				BCB3006F2641A1E1006F9562 /* CellController.swift in Sources */,
+				BCB30065264190A8006F9562 /* Bike.swift in Sources */,
 				C4DEB06626409D5B00811624 /* SceneDelegate.swift in Sources */,
 				C4DEB08D2640AA8000811624 /* Utilities.swift in Sources */,
 				C4DEB0902641475000811624 /* AccountData.swift in Sources */,
 				C4DEB07F26409E8200811624 /* HomeViewController.swift in Sources */,
+				BCB3006B26419F7C006F9562 /* Extension + HomeVCBikeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
