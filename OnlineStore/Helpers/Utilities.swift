@@ -15,7 +15,7 @@ class Utilities {
         // Create the bottom line
         let bottomLine = CALayer()
         
-        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width-40, height: 2)
+        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
         
         bottomLine.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1).cgColor
         
@@ -53,11 +53,14 @@ class Utilities {
 
     static func isValidEmail(possibleEmail:String) -> Bool {
            // print("проверка: \(testStr)")
-            // область определения возможных символов в названии почты + обязательное использование "@", "." и как минимум 2 символа после "."(.uk/.com/.ua.com)
-            let domainRange = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z.]{2,}"
-            let emailTest = NSPredicate(format:"SELF MATCHES %@", domainRange)
-            return emailTest.evaluate(with: possibleEmail)
+            // область определения возможных символов в названии почты + обязательное использование "@", "." и как минимум 2 символа после "."(.uk/.com/.ua.com) + почта не должна уже быть зарегистрирована в системе
+        let domainRange = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z.]{2,}"
+        for account in DATABASE {
+            if account.email == possibleEmail {
+                return false
+            }
         }
-    
+        return NSPredicate(format:"SELF MATCHES %@", domainRange).evaluate(with: possibleEmail)
+        }
 }
 // yar.berlin@mail.ua.com

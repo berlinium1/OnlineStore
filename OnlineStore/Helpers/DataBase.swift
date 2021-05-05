@@ -7,4 +7,5 @@
 
 import Foundation
 
+// a database for imitation of accounting
 var DATABASE = [Account]()

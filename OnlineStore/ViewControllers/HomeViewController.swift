@@ -9,19 +9,25 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // MARK: Outlets for HomeViewController
+    
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var signOutButton: UIButton!
     
     var bikes: [Bike] = []
     let cellController = CellController()
     
+    // MARK: Functions and Actions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Utilities.styleHollowButton(signOutButton)
         tableView.dataSource = self
         tableView.delegate = self
-        bikes =  BikeData.shared.bikeList()
+        bikes = BikeData.shared.bikeList()
     }
     
+    // go to detailed information about selected bike
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailed" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -38,4 +44,9 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func signOutTapped() {
+        performSegue(withIdentifier: "goMain", sender: nil)
+    }
+    
 }
