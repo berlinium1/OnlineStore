@@ -45,7 +45,7 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         // checking whether password is valid
         if !Utilities.isPasswordValid(passwordTextField.text!) {
-            errorMessage(title: "WARNING", message: "You enetered inappropriate password")
+            errorMessage(title: "WARNING", message: "You enetered inappropriate password. There must be at least 1 uppercase, 1 lowercase letter and 1 number. Password length must be equal at least to 8 numbers")
             return
         }
         // checking whether email is valid
